@@ -1,0 +1,57 @@
+// Game: 1
+// Budget: 60
+// Distribution: 20,5,40,5
+// Ideal Points: 33,58
+// Player Number: 1
+Ideal Point:, 19
+Votes:, 1,2,1
+1st Ones:, 0,0
+1st Tokens:, 1,0
+2nd Ones:, 0,0
+2nd Tokens:, 0,0
+
+// Game: 2
+// Budget: 80
+// Distribution: 30,5,70,5
+// Ideal Points: 22,78,54
+
+// Game: 3
+// Budget: 100
+// Distribution: 20,5,40,5
+// Ideal Points: 22,33,34,58,75
+
+// Game: 4
+// Budget: 120
+// Distribution: 30,5,80,5
+// Ideal Points: 1,10,51,52,53
+
+// Game: 5
+// Budget: 60
+// Distribution: 20,5,40,5
+// Ideal Points: 43,58
+
+// Game: 6
+// Budget: 80
+// Distribution: 30,5,70,5
+// Ideal Points: 22,78,54
+
+// Game: 7
+// Budget: 80
+// Distribution: 10,5,70,5
+// Ideal Points: 22,78,54
+
+// Game: 8
+// Budget: 140
+// Distribution: 30,5,70,5
+// Ideal Points: 22,54,64,74
+
+// Game: 9
+// Budget: 80
+// Distribution: 30,5,70,5
+// Ideal Points: 22,78,54
+
+// Game: 10
+// Budget: 80
+// Distribution: 30,5,70,5
+// Ideal Points: 22,32,42,52,62,72
+
