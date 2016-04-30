@@ -34,6 +34,7 @@ public class ServerJFrame extends JFrame {
 	private JLabel gameLabel;
 	private JButton startGame;
 	private JButton writeData;
+	private JButton endGame;
 	private JTable table;
 	private JScrollPane scrollPane;
 	private String[] columnNames = new String[]{"Player #", "Remove"};
@@ -72,6 +73,14 @@ public class ServerJFrame extends JFrame {
 			}
 		});
 		contentPane.add(writeData, "cell 4 2");
+
+		endGame = new JButton("End Game");
+		endGame.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				PCS.firePropertyChange("End Game", null, null);
+			}
+		});
+		contentPane.add(endGame, "cell 5 2");
 
 		addScrollPane();
 	}

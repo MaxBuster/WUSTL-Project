@@ -119,6 +119,10 @@ public class Server {
 				gui.allowClose();
 			} else if (PCE.getPropertyName() == "Write Data Now") {
 				model.writeDataPrematurely();
+			} else if (PCE.getPropertyName() == "End Game") {
+				for (Integer i : clientHandlers.keySet()) {
+					clientHandlers.get(i).writeMessage("Games Over");
+				}
 			}
 		}
 	}

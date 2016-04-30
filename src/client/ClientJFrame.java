@@ -230,6 +230,10 @@ public class ClientJFrame extends JFrame {
 	public void removeScrollPane2() {
 		contentPane.remove(scrollPane2);
 	}
+	
+	public int getLeftoverBudget() {
+		return budget;
+	}
 
 	public void increaseWinnings(int roundWinnings) {
 		winnings += roundWinnings; // FIXME make these amounts conditional

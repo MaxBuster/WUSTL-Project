@@ -239,7 +239,7 @@ public class ServerHandler {
 		}
 	}
 
-	private void writeMessage(String type) {
+	protected void writeMessage(String type) {
 		try {
 			out.writeByte((int) '!');
 			out.writeUTF(type);

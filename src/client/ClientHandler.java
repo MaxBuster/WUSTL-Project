@@ -211,8 +211,10 @@ public class ClientHandler {
 		int winningCandidate = readInt();
 		int winnings = readInt();
 		gui.increaseWinnings(winnings);
-		gui.setTextPane("The winner is: " + winningCandidate);
-		sleep();
+		int leftoverBudget = gui.getLeftoverBudget();
+		winnings += leftoverBudget;
+		JOptionPane.showMessageDialog(null, "The winner is: " + winningCandidate + 
+				"\n You got: " + winnings + " francs");
 	}
 
 	private String newMessage() {
