@@ -19,7 +19,7 @@ public class Client {
 			// On Mac go to Terminal; look for inet after ifconfig |grep inet
 			// Ignore 127.0.0.1
 			// Lab main laptop: 128.252.177.166
-			clientSocket = new Socket("localhost", 10501);
+			clientSocket = new Socket("128.252.177.166", 10501);
 			socketInputStream = new DataInputStream(clientSocket.getInputStream());
 			socketOutputStream = new DataOutputStream(clientSocket.getOutputStream());
 			ClientHandler handler = new ClientHandler(socketInputStream, socketOutputStream);

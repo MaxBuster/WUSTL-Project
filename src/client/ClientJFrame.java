@@ -127,7 +127,7 @@ public class ClientJFrame extends JFrame {
 		lblBudget.setText("Budget: " + budget);
 		lblBudget.setVisible(true);
 		this.budget = budget;
-		
+
 		lblGameNum.setText("Game: " + currentGame + "/" + numGames);
 		lblGameNum.setVisible(true);
 		this.numGames = numGames;
@@ -230,15 +230,17 @@ public class ClientJFrame extends JFrame {
 	public void removeScrollPane2() {
 		contentPane.remove(scrollPane2);
 	}
-	
+
 	public int getLeftoverBudget() {
 		return budget;
 	}
 
 	public void increaseWinnings(int roundWinnings) {
-		winnings += roundWinnings; // FIXME make these amounts conditional
-		winnings += budget;
-		lblWinnings.setText("Winnings: " + winnings);
+		if (currentGame != 2) {
+			winnings += roundWinnings; // FIXME make these amounts conditional
+			winnings += budget;
+			lblWinnings.setText("Winnings: " + winnings);
+		}
 		updateGUI();
 	}
 
@@ -249,7 +251,7 @@ public class ClientJFrame extends JFrame {
 	public void allowClose() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-	
+
 	public void closeWithIOException() {
 		this.setVisible(false);
 		this.dispose();

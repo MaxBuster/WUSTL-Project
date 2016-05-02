@@ -32,7 +32,7 @@ public class ClientHandler {
 	private char party;
 	private int budget;
 	private int numGames;
-	
+
 	public ClientHandler(DataInputStream socketInputStream, DataOutputStream socketOutputStream) {
 		PCS.addPropertyChangeListener(new ChangeListener());
 		this.socketInputStream = socketInputStream;
@@ -138,7 +138,7 @@ public class ClientHandler {
 		gui.addDataset(candidate, data);
 		gui.updateGUI();
 	}
-	
+
 	private void startStraw() {
 		String strawVoteDescription = "It is now the straw vote. \n"
 				+ "Vote based on the information that you bought from the previous round. \n"
@@ -198,7 +198,7 @@ public class ClientHandler {
 			gui.updateGUI();
 		}
 	}
-	
+
 	private void startFinal() {
 		String finalVoteDescription = "This is the final vote round. \n"
 				+ "Whoever wins this round will win the election.";
@@ -206,7 +206,7 @@ public class ClientHandler {
 		gui.setScrollPane2(TABLE2VOTENAMES, TABLE2VOTEDATA, "Vote");
 		gui.updateGUI();
 	}
-	
+
 	private void endCurrentGame() {
 		int winningCandidate = readInt();
 		int winnings = readInt();

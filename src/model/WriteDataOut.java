@@ -16,9 +16,9 @@ import com.orsoncharts.util.json.JSONArray;
 import com.orsoncharts.util.json.JSONObject;
 
 public class WriteDataOut {
-	public static void writeData(ArrayList<GameInfo> gameInfo) {
+	public static void writeData(ArrayList<GameInfo> gameInfo, int gameNum) {
 		try {
-			BufferedWriter writer = new BufferedWriter(new FileWriter(new File("data.csv")));
+			BufferedWriter writer = new BufferedWriter(new FileWriter(new File("data-" + gameNum + ".csv")));
 			for (GameInfo game : gameInfo) {
 				// Game Info
 				writer.write("// Game: " + game.getGameNum() + "\n");

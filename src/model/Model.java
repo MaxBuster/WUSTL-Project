@@ -188,12 +188,12 @@ public class Model {
 	public synchronized void writeDataOut() {
 		numDone++;
 		if (numDone == players.size()) {
-			WriteDataOut.writeData(gameInfo);
+			WriteDataOut.writeData(gameInfo, gameNum);
 		}
 		PCS.firePropertyChange("Game Over", null, null);
 	}
 	
 	public synchronized void writeDataPrematurely() {
-		WriteDataOut.writeData(gameInfo);
+		WriteDataOut.writeData(gameInfo, gameNum);
 	}
 }
